@@ -1,6 +1,7 @@
 create table "drum_store"(id integer primary key,brand text,make text,year integer,price integer);
 
 --created a drum store database
+
 insert into "drum_store" values (1,"ludwig","pro_series",2000,1200);
 insert into "drum_store" values (2,"tama","xl",2005,2600);
 insert into "drum_store" values (3,"pearl","studio",2002,5000);
@@ -18,7 +19,10 @@ insert into "drum_store" values(14,"pace","px",2020,30);
 insert into "drum_store" values(15,"bongo","sx",2019,45);
 
 SELECT * FROM "drum_store" order by price desc;
+
 --display the database, and ordered by price
 
 SELECT AVG(price) AS "Average Price" from "drum_store";
---what is the avg price ofitems in the price section?
+
+
+--what is the avg price of items in the price section?
